@@ -1,0 +1,18 @@
+underscoreのメソッドについてのメモ
+
+★_extend(obj,source)
+→オブジェクトを結合する
+→これでいうとobjにsourceのオブジェクトを加える（コピーではない）
+例）obj = {name:"hoge"}, source = {key:"foo}なら
+obj = {name:"hoge", key:"foo"}となる
+
+★_template(templateString)
+→htmlに用意したテンプレートを取得できる
+例）
+var compiled = _.template("hello: <%= name %>");
+compiled({name: 'moe'});
+=> "hello: moe"
+$elでもできる
+template: _.template($('#task-template').html())
+→html上にclass=tsk-templateがあればそこを根として部分木を持ってくる
+
