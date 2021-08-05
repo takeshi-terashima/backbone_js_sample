@@ -150,4 +150,16 @@
     var addTaskView = new AddTaskView({collection: tasks});
     
     $('#tasks').html(tasksView.render().el);
-    })();
+    
+        //Routerの定義
+    var MyRouter = Backbone.Router.extend({
+        routes:{
+            "foo/:hoge": "bar",
+        },
+        bar: function(hoge) {
+            alert(hoge);
+        }
+    });
+    window.router = new MyRouter();
+    Backbone.history.start();
+})();
