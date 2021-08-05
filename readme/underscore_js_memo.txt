@@ -1,18 +1,20 @@
-underscore‚Ìƒƒ\ƒbƒh‚É‚Â‚¢‚Ä‚Ìƒƒ‚
+underscoreã®ãƒ¡ã‚½ãƒƒãƒ‰ã«ã¤ã„ã¦ã®ãƒ¡ãƒ¢
 
-š_extend(obj,source)
-¨ƒIƒuƒWƒFƒNƒg‚ğŒ‹‡‚·‚é
-¨‚±‚ê‚Å‚¢‚¤‚Æobj‚Ésource‚ÌƒIƒuƒWƒFƒNƒg‚ğ‰Á‚¦‚éiƒRƒs[‚Å‚Í‚È‚¢j
-—ájobj = {name:"hoge"}, source = {key:"foo}‚È‚ç
-obj = {name:"hoge", key:"foo"}‚Æ‚È‚é
+â˜…_.extend(obj,source)
+â†’ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’çµåˆã™ã‚‹
+â†’ã“ã‚Œã§ã„ã†ã¨objã«sourceã®ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’åŠ ãˆã‚‹ï¼ˆã‚³ãƒ”ãƒ¼ã§ã¯ãªã„ï¼‰
+ä¾‹ï¼‰obj = {name:"hoge"}, source = {key:"foo}ãªã‚‰
+obj = {name:"hoge", key:"foo"}ã¨ãªã‚‹
 
-š_template(templateString)
-¨html‚É—pˆÓ‚µ‚½ƒeƒ“ƒvƒŒ[ƒg‚ğæ“¾‚Å‚«‚é
-—áj
+â˜…_.template(templateString)
+â†’htmlã«ç”¨æ„ã—ãŸãƒ†ãƒ³ãƒ—ãƒ¬ãƒ¼ãƒˆã‚’å–å¾—ã§ãã‚‹
+ä¾‹ï¼‰
 var compiled = _.template("hello: <%= name %>");
 compiled({name: 'moe'});
 => "hello: moe"
-$el‚Å‚à‚Å‚«‚é
+$elã§ã‚‚ã§ãã‚‹
 template: _.template($('#task-template').html())
-¨htmlã‚Éclass=tsk-template‚ª‚ ‚ê‚Î‚»‚±‚ğª‚Æ‚µ‚Ä•”•ª–Ø‚ğ‚Á‚Ä‚­‚é
+â†’htmlä¸Šã«class=tsk-templateãŒã‚ã‚Œã°ãã“ã‚’æ ¹ã¨ã—ã¦éƒ¨åˆ†æœ¨ã‚’æŒã£ã¦ãã‚‹
 
+â˜…_.debounce(function,milisecond)
+â†’å¼•æ•°ã«æŒ‡å®šã—ãŸfunctionã‚’milisecondã ã‘é…ã‚‰ã›ã¦èµ·å‹•ã•ã›ã‚‹ãƒ¡ã‚½ãƒƒãƒ‰
