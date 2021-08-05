@@ -70,3 +70,8 @@ var View1 = Backbone.View.extend({
 例）
 var view2 = new View2({el: $("#hoge")});
 特に指定が無い場合は,<div></div>となる。
+
+・elと$elの違い
+→elはDOM要素として定義したもので$elはjQueryオブジェクトを指している。
+そのため、$elはshow()やhide()といったjQueryのライブラリ関数を使用できる。
+一方でelはこのBackbone.jsの中でオブジェクトのキーとして用意したものである。
