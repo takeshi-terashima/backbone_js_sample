@@ -18,3 +18,12 @@ template: _.template($('#task-template').html())
 
 ★_.debounce(function,milisecond)
 →引数に指定したfunctionをmilisecondだけ遅らせて起動させるメソッド
+
+★_.invoke(list,methodname)
+→listのすべての値に対して第二引数で指定したメソッドを実行する
+例）第二引数でdestroyとしたら、リスト内の値を全削除するみたいなことをするときに使用
+
+★_.each(list or obj, function(val,key))
+→listもしくはobjの入力値をfunctionに代入し、処理を実行する
+listの場合は各列の値で行ってくれる
+backbone.jsの中でlist or obj.each(function(val))で書くこともできる
